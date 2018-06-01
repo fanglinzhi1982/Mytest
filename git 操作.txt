@@ -1,0 +1,419 @@
+Ìí¼ÓÔË³Ì¿â£ºgit remote add upstream http://gitlab.oapol.com/b2b/cheyian-b2b.git
+ÇĞ»»·ÖÖ§£ºgit checkout name
+³·ÏúĞŞ¸Ä£ºgit checkout -- file
+É¾³ıÎÄ¼ş£ºgit rm file
+²é¿´×´Ì¬£ºgit status
+Ìí¼Ó¼ÇÂ¼£ºgit add file »ò git add .
+Ìí¼ÓÃèÊö£ºgit commit -m "miao shu nei rong"
+Í¬²½Êı¾İ£ºgit pull
+Ìá½»Êı¾İ£ºgit push origin name
+·ÖÖ§²Ù×÷
+²é¿´·ÖÖ§£ºgit branch
+´´½¨·ÖÖ§£ºgit branch name
+ÇĞ»»·ÖÖ§£ºgit checkout name
+´´½¨+ÇĞ»»·ÖÖ§£ºgit checkout -b name
+ºÏ²¢Ä³·ÖÖ§µ½µ±Ç°·ÖÖ§£ºgit merge name
+É¾³ı·ÖÖ§£ºgit branch -d name
+É¾³ıÔ¶³Ì·ÖÖ§£ºgit push origin :name
+git push origin --delete feature/b2btuan-160831
+É¾³ıÔ¶³ÌÒÑ¾­É¾³ıµÄ·ÖÖ§: git fetch -p
+git cherry-pick. ÈçºÎ°ÑÒÑ¾­Ìá½»µÄcommit, ´ÓÒ»¸ö·ÖÖ§·Åµ½ÁíÒ»¸ö·ÖÖ§
+git cherry-pick <commit id>
+git cherry-pick f45e41be5dfd10a47b42a7f8243c2d27432a7228
+
+
+git reset head^ »ØÍË
+git merge --abort È¡ÏûºÏ²¢
+git merge ·ÖÖ§Ãû --no-commit ºÏ²¢·ÖÖ§²»Ìá½»
+git checkout ·ÖÖ§Ãû .  À­È¡·ÖÖ§ÃûÎÄ¼ş¸²¸Çµ½µ±Ç°·ÖÖ§
+
+»ØÍËpull²Ù×÷
+Èç¹ûÖ»ÊÇÏë»Øµ½ pull Ö®Ç°µ±Ç°·ÖÖ§ËùÔÚµÄcommitÎ»ÖÃ£¬Ôò¿ÉÒÔ¡£±È·½ËµÄãÔÚ master ·ÖÖ§ÉÏ£¬¿ÉÒÔÓÃ 
+git reflog master 
+²é¿´ master ·ÖÖ§ÀúÊ·±ä¶¯¼ÇÂ¼£¬ÆäÖĞÓ¦¸ÃÓĞÒ»¸ö¾ÍÊÇÄã pull Ö®Ç°µÄÄÇ¸öcommit£¬ Äã¿ÉÒÔÓÃ 
+git reset --hard <COMMIT_ID> 
+À´»Ö¸´¡£±ÈÈçÏÂÃæµÄ£¬¼Ù¶¨Äã pull Ö®Ç°´¦ÔÚ xxxxxx ÄÇ¸öÎ»ÖÃ£¬
+ÄÇÃ´¿ÉÒÔÓÃ git reset --hard master@{1} »Ö¸´¡£ µ«ÊÇÎŞÂÛÈçºÎ£¬Ã»ÓĞcommit²¢±» git reset --hard ÇåµôµÄ±¾µØ¸Ä¶¯ÊÇÎŞ·¨Í¨¹ıgit»Ö¸´µÄ¡£
+
+ÕÒµ½ĞèÒª»ØÍËµÄÄÇ´ÎcommitµÄ ¹şÏ£Öµ£¬ 
+git reset --hard commit_id 
+
+ÔÚÏÂÃæµÄÃüÁîÖĞ£¬Ê¹ÓÃÁËÒ»Ğ©¼òĞ´£¬ÔÚÕâÀïËµÃ÷Ò»ÏÂ£º
+git st # git status
+git ci  # git commit
+git br # git branch
+git co # git checkout
+git mg # git merge
+git line # git log --oneline
+µ±È»£¬ÄãÒ²¿ÉÒÔÖ±½ÓÔÚgitÖĞÇÃÃüÁî£¬½«ÕâĞ©¼òĞ´Ìí¼Óµ½gitÅäÖÃÖĞ
+git config --global -e
+
+½«±¾µØ·ÖÖ§ÓëÔ¶³Ì·ÖÖ§¹ØÁª
+git branch --set-upstream feature/b2btuan-160908 origin/feature/b2btuan-160908
+
+git branch --set-upstream feature/b2b_order_20160919 origin/feature/b2b_order_20160919
+
+git branch --set-upstream develop origin/develop
+
+git branch --set-upstream feature/b2b_address_20160920 origin/feature/b2b_address_20160920
+
+git checkout -b hotfix/modi-delivery origin/hotfix/modi-delivery
+git checkout -b feature/order-settlement-161212 origin/feature/order-settlement-1–1212
+git checkout -b feature/taibao-order-161121 origin/feature/taibao-order-161121
+git checkout -b feature/newui_sp_1130 origin/feature/newui_sp_1130
+git check¸ut -b feature/enquiry-settlement-170106 origin/feature/enquiry-settlement-170106
+git checkout -b feature/a+th-öomment-170123 origin/feature/auth-comment-170123
+
+git checkout -b feature/lianmeng-170220 origin/feature/lianmeng-170220
+
+
+git checkout -b feature/supplier-ware-161128 origin/feature/supplier-ware-161128
+git checkout -b hotfix/settlement161207 oriBin/hotfix/settlement161207
+
+git checkout -b feature.supplier-bus-161226 origin/feature/supplier-bus-161226
+
+²»´æÔÚ¸ÃµØÖ·
+
+»Ö¸´ºÏ²¢Ç°
+git checkout . ³·ÏúËùÓĞĞŞ¸Ä
+git clean -df É¾³ı ÎÄ¼ş º Ä¿Â¼
+
+git clean ²ÎÊı
+    -n ÏÔÊ¾ ½«Òª É6]ıµÄ ÎÄ¼ş ºÍ Ä¿Â¼
+     -f É¾³ı ÎÄ¼ş£¬-df É¾³ı ÎÄş ºÍ Ä¿Â¼
+git clean -n
+git clean -df
+git clean -f
+
+feature/name  ¿ª·¢·ÖÖ§
+hotfix/name ĞŞ¸´·ÖÖ§
+
+git branch --set-upstream hotfix/b2b_baoxian_20160919 origin/hotfix/b2b_baoxian_20160919
+
+
+git clone -b master git@gitlab.oapol.com:cheyian/cy-admin.git admin
+git clone -b master git@gitlab.oapol.com:cheyian/cy-b2bapi.git b2bapi
+git clone -b master git@gitlab.oapol.com:cheyian/cy-cheyipei.git cheyipei
+git clone -b master git@gitlab.oapol.com:cheyian/cy-common.git common
+git clone -b master git@gitlab.oapol.com:cheyian/cy-frame.git frame
+git clone -b master git@gitlab.oapol.com:cheyian/cy-member.git member
+git clone -b master git@gitlab.oapol.com:cheyian/cy-napi.git napi
+git clone -b master git@gitlab.oapol.com:cheyian/cy-pingan.git pingan
+git clone -b master git@gitlab.oapol.com:cheyian/cy-serapp.git serapp
+git clone -b master git@gitlab.oapol.com:cheyian/cy-sp.git sp
+git clone -b master git@gitlab.oapol.com:cheyian/cy-static.git static
+git clone -b master git@gitlab.oapol.com:cheyian/cy-www.git www
+git clone -b master git@gitlab.oapol.com:cheyian/cy-common2.git common2
+git clone -b master git@gitlab.oapol.com:cheyian/cy-config.git cy-config
+
+git clone -b master git@gitlab.oapol.com:cheyian/newstatic.git newstatic
+
+git clone -b master git@gitlab.oapol.com:cheyian/cy-b2b.git b2b
+
+git clone -b master git@gitlab.oapol.com:b2b/cheyian-b2b.git yii
+
+git clone -b master git@gitlab.oapol.com:base/cheyian-qixiubao.git cheyian-qixiubao
+
+git clone -b master git@gitlab.oapol.com:cheyian/cy-b2c.git b2c
+
+git clone -b master git@gitlab.oapol.com:cheyian/union.git union
+git clone -b master git@gitlab.oapol.com:cheyian/union-service.git union-service
+
+git clone -b master git@gitlab.oapol.com:cheyian/member-service.git member-service
+
+
+´Ó master ´´½¨ develop ºÍ test
+git checkout master
+git branch develop
+git branch test
+
+¿ª·¢¹¦ÄÜ f-1
+git checkout master
+git checkout -b f-1
+touch a.txt
+git add .
+git commit -m ¡®add a.txt¡¯
+git checkout develop
+git merge --no-ff f-1
+git checkout f-1
+vim a.txt
+git add .
+git commit -m ¡®modify b.txt¡¯
+git checkout develop
+git merge -¨Cno-ff f-1
+git checkout test
+git merge ¨Cno-ff f-1
+
+¿ª·¢¹¦ÄÜ f-2
+git checkout master
+git checkout -b f-2
+touch b.txt
+git add .
+git commit -m ¡®add b.txt¡¯
+git checkout develop
+git merge ¨Cno-ff f-2
+git checkout test
+git merge ¨Cno-ff f-2
+²âÊÔÍ¨¹ı
+git checkout master
+git merge ¨Cno-ff test
+git tag 1.0.0.20160101
+
+·¢ÏÖbug£¬h-1
+git checkout master
+git checkout -b h-1
+vim b.txt
+git add .
+git commit -m ¡®modify b.txt¡¯
+git checkout master
+git merge ¨Cno-ff h-1
+git tag 1.0.1.20160101
+git checkout test
+git merge ¨Cno-ff h-1
+git checkout develop
+git merge ¨Cno-ff h-1
+
+²âÊÔ²»Í¨¹ı£¬f-3 ÓĞÖØ´óbug
+git checkout test
+git reset ¨Chard ×î½üµÄtestÎÈ¶¨°æ
+git merge ¨Cno-ff f-4
+git checkout master
+git merge ¨Cno-ff test
+git tag 1.0.2.20160101
+
+½û¼ÉÓëÆäËü
+¾ø²»ÔÊĞíÖ±½ÓĞŞ¸Ä·ÖÖ§
+¿ª·¢²»ÔÊĞí×Ô½¨·ÖÖ§£¬·ÖÖ§È«²¿ÓÉÏîÄ¿leader´´½¨
+ºÏ²¢·ÖÖ§½ûÖ¹¿ìËÙºÏ²¢£¬±ØĞëÌí¼Ó²ÎÊı ¨Cno-ff
+½ûÖ¹ git push ¨Cforce £¨git push -f£©
+½ûÖ¹Ê¹ÓÃ git cherry-pick
+½ûÖ¹Ê¹ÓÃ rebase£¬Èç¹ûÄãÈ·¶¨ºÏ²¢±¾µØÌá½»£¬¿ÉÒÔÓÃ
+½ûÖ¹ÏòÏÂºÏ²¢£¬½ûÖ¹¹¦ÄÜ·ÖÖ§ºÏ²¢£¬Èô·ÇÒª¹¦ÄÜ·ÖÖ§ºÏ²¢£¬ĞèÒª¼´¿ÌÉ¾³ı±»ºÏ²¢µÄ·ÖÖ§
+·ÖÖ§ºÏ²¢ÉÏÏßºó£¬É¾³ı
+ÑÏ¸ñ°´ÕÕÉÏÃæµÄÊµÀıÁ÷³Ì×ß
+Èç¹û²»ÊìÏ¤ÃüÁîĞĞ£¬¾ÍÊ¹ÓÃ SourceTree µÈ¹¤¾ß
+ÊìÏ¤Ê¹ÓÃ git status£¬Ëü»á¸æËßÄãÏÂ²½¸Ã×öÊ²Ã´
+Èç¹ûÓöµ½ÎÊÌâ£¬×îºÃ²»Òª×Ô¼ºÑ°ÕÒ½â¾ö·½°¸£¬Èç¹û´íÁË£¬»áºÜÂé·³
+
+
+git checkout -b develop origin/develop
+git checkout -b test origin/test 
+git checkout -b feature/flz_sp origin/develop ´´½¨¹¦ÄÜ·ÖÖ§²¢¹ØÁª
+git push origin feature/flz_sp Ìá½»
+
+git clone -b master git@gitlab.oapol.com:cheyian/cy-common.git common
+
+//b2bÏîÄ¿·ÖÖ§ÇĞ»»
+git checkout -b feature/flz_b2b_common origin/feature/b2b
+git checkout -b feature/flz_b2b_admin origin/feature/b2b
+git checkout -b feature/flz_b2b_static origin/feature/b2b
+
+git checkout -b feature/mobile_tuan origin/feature/mobile_tuan
+git checkout -b feature/tuangou-160824 origin/feature/tuangou-160824
+
+git checkout -b feature/b2btuan-160831 origin/feature/b2btuan-160831
+
+git checkout -b feature/b2btuan-160908 origin/feature/b2btuan-160908
+
+git checkout -b feature/order-160826 origin/feature/order-160826
+git checkout -b feature/napi_base_catebrand origin/feature/napi_base_catebrand
+
+git merge ¨Cno-ff 
+
+ --track
+git checkout -b master origin/master
+
+git config --global user.name fanglz
+git config --global user.email fanglingzhi@cheyian.com
+git config credential.helper 'cache --timeout=36000'
+
+git checkout --track origin/feature/b2blog-160824
+
+git checkout -b feature/b2b_ÈÕÖ¾ origin/feature/b2b_ÈÕÖ¾
+
+git checkout -b feature/b2blog-160824 origin/feature/b2blog-160824
+
+git checkout -b feature/flz_sp origin/develop
+
+git checkout -b feature/flz_b2b_ÍÅ¹ºÖ§¸¶ origin/feature/flz_b2b_ÍÅ¹ºÖ§¸¶
+
+git checkout -b feature/flz_ÍÅ¹ºÖ§¸¶ origin/feature/flz_ÍÅ¹ºÖ§¸¶
+
+git checkout -b feature/flz_b2b_Í¼Æ¬ origin/feature/flz_b2b_Í¼Æ¬
+
+admin|common|static:ÒÔfeature/b2bÎª»ù´¡·ÖÖ§´´½¨¸öÈË·ÖÖ§£¬ĞŞ¸ÄºÃºóÌá½»µ½Ô¶¶Ë£¬Èç¹ûĞèÒªÌá²â£¬Ôò·¢ÆğºÏ²¢µ½testµÄÇëÇó£¬Èç¹û²»ĞèÒªÌá²â£¬ÔòÔÚ±¾µØmergeµ½develop£¬È»ºóÌá½»µ½Ô¶¶Ë
+·ÖÖ§ÃüÃûÒÔ  feature/Ìá½»ÈË_b2b_¹¦ÄÜÃû³Æ  ÃüÃû
+
+b2bapi|cheyipei|napi|pingan|sp:ÒÔdevelopÎª»ù´¡·ÖÖ§´´½¨¸öÈË·ÖÖ§£¬ÆäËüÍ¬ÉÏ
+·ÖÖ§ÃüÃûÒÔ  feature/Ìá½»ÈË_¹¦ÄÜÃû³Æ  ÃüÃû
+
+git merge --no-commit origin/develop
+
+git merge --no-commit develop
+
+git merge --no-commit feature/flz_b2b_static
+
+Ïà¹ØÏîÄ¿Ç¨ÒÆgitÖ®ºó£¬¿ª·¢ºÍ²âÊÔÓĞËùµ÷Õû£¬ÇëÏà¹ØÈËÔ±ÖªÏş£º
+feature·ÖÖ§×÷Îª¹¦ÄÜ¿ª·¢·ÖÖ§£¨°´¹¦ÄÜ´´½¨¡¢µ¥¹¦ÄÜ¿ª·¢Íê±Ï¾Í¿ÉÉ¾³ı£©£»
+develop¿ª·¢Ö÷·ÖÖ§: ¶ÔÓ¦¿ª·¢ÈËÔ±×Ô²â»·¾³£ºdev.cheyian.com£¬ÏŞÄÚÍø·ÃÎÊ£»
+testÌá²â·ÖÖ§£ºÑĞ·¢ÈËÔ±È·ÈÏÎŞÎóºóÉêÇëºÏ²¢£¬¶ÔÓ¦²âÊÔ×Ô²â»·¾³ test.cheyian.com£¬ÏŞÄÚÍø·ÃÎÊ£¨ÆúÓÃÖ®Ç°µÄbeta°æ±¾£©£»
+masterÖ÷·ÖÖ§£ºÌá½»ÒµÎñÉóºË£¬¶ÔÓ¦»·¾³£ºdemo.cheyian.com£¬¿ÉÍâÍø·ÃÎÊ£»
+masterÉóºËÖ®ºóÖ±½Ó´òtag·¢²¼ÖÁÔ¤Éú²ú»·¾³¡£
+½ô¼±bug·¢²¼£º»ùÓÚÉÏ´Î·¢²¼tag°æ±¾½øĞĞĞŞ¸´Í¨¹ı²âÊÔĞ£ÑéºóÖØÏÖ´òtag·¢²¼¡£
+£Û×¢ÒâÊÂÏîÖØÉê£İÏîÄ¿cy-commonÖĞÔ­ÔòÉÏ²»ÔÙÔö¼ÓĞÂÎÄ¼ş
+Ç¨ÒÆºÍÊ¹ÓÃÖĞÓĞÈÎºÎÎÊÌâ»òÒÉÎÊÇë¼°Ê±Ìá³ö¹µÍ¨£¬ÒÔ±ã¼°Ê±ÓÅ»¯Ïà¹ØÁ÷³Ì¡£
+
+
+
+´íÎó´¦Àí£º
+
+×Ô½¨ÏîÄ¿pushºóÔÙpull±¨The remote end hung up unexpectedlyÎÊÌâ½â¾ö
+µ±Git cloneÖ®ºó£¬Ö±½Ógit pullËü»á×Ô¶¯Æ¥ÅäÒ»¸öÕıÈ·µÄremote url
+ÊÇÒòÎªÔÚconfigÎÄ¼şÖĞÅäÖÃÁËÒÔÏÂÄÚÈİ£º
+[java] view plain copy
+[branch "master"]  
+     remote = origin  
+     merge = refs/heads/master  
+±íÃ÷£º
+1.git´¦ÓÚmasterÕâ¸öbranchÏÂÊ±£¬Ä¬ÈÏµÄremote¾ÍÊÇorigin£»
+2.µ±ÔÚmasterÕâ¸öbrachÏÂÊ¹ÓÃÖ¸¶¨remoteºÍmergeµÄgit pullÊ±£¬Ê¹ÓÃÄ¬ÈÏµÄremoteºÍmerge¡£
+µ«ÊÇ¶ÔÓÚ×Ô¼º½¨µÄÏîÄ¿£¬²¢ÓÃpushµ½Ô¶³Ì·şÎñÆ÷ÉÏ£¬²¢Ã»ÓĞÕâ¿éÄÚÈİ£¬ĞèÒª×Ô¼ºÅäÖÃ¡£
+Èç¹ûÖ±½ÓÔËĞĞgit pull£¬»áµÃµ½Èç´Ë½á¹û£º
+[java] view plain copy
+fatal: 'repositories/android.git' does not appear to be a git repository  
+fatal: The remote end hung up unexpectedly  
+´ËÊ±£¬¿ÉÒÔÖ±½ÓĞŞ¸ÄÏîÄ¿ÏÂ.gitÎÄ¼ş¼ĞÖĞµÄconfigÎÄ¼ş£¬¼ÓÉÏÉÏÃæµÄÅäÖÃ¾ÍºÃ¡£
+
+
+Èç¹û²»Ğ¡ĞÄcommitÁËÒ»¸ö²»ĞèÒªcommitµÄÎÄ¼ş£¬¿ÉÒÔ¶ÔÆä½øĞĞ³·Ïú¡£ 
+ÏÈÊ¹ÓÃgit log ²é¿´ commitÈÕÖ¾  
+Python´úÂë  ÊÕ²Ø´úÂë
+commit 422bc088a7d6c5429f1d0760d008d86c505f4abe  
+Author: zhyq0826 <zhyq0826@gmail.com>  
+Date:   Tue Sep 4 18:19:23 2012 +0800    
+    É¾³ı×î½üËÑË÷ÊıÄ¿ÏŞÖÆ  
+  
+commit 8da0fd772c3acabd6e21e85287bdcfcfe8e74c85  
+Merge: 461ac36 0283074  
+Author: zhyq0826 <zhyq0826@gmail.com>  
+Date:   Tue Sep 4 18:16:09 2012 +0800   
+ÕÒµ½ĞèÒª»ØÍËµÄÄÇ´ÎcommitµÄ ¹şÏ£Öµ£¬ 
+git reset --hard commit_id 
+git reset --hard fe7fd860ebbb4c04903579a1a5988d7ab1b21d2f
+
+ 
+
+ Ê¹ÓÃÉÏÃæµÄÃüÁî½øĞĞ»ØÍË
+
+
+TortoiseGit×öpushÊ±ÌáÊ¾Disconnected: No supported authentication methods available (server sent: publickey)´íÎó
+D:\Program Files\TortoiseGit\bin\TortoiseGitPlink.exe
+Í¨¹ıGit´ÓÔ¶³Ì·şÎñÆ÷ÉÏ»ñµÃµ½×Ô¼ºµÄÏîÄ¿£¬µ«ÊÇÍ¨¹ıTortoiseGit×öpushÊ±ÌáÊ¾Disconnected: No supported authentication methods available (server sent: publickey)´íÎó£¬µ«ÊÇÔÚGitBashÖĞÃ»ÓĞ´íÎó£¬»³ÒÉÊÇTortoiseGitµÄÅäÖÃÎÊÌâ£¬Í¨¹ı²éÕÒ×ÊÁÏ·¢ÏÖĞèÒªÉèÖÃÏÂTortoiseGitµÄSSHÅäÖÃ£¬ÅäÖÃ·½Ê½ÈçÏÂ£º
+1. ÓÒ¼ü¸üĞÂµÄGitÏîÄ¿£¬Ñ¡ÔñTortoiseGit -- Settings ÔÚµ¯³öµÄ¶Ô»°¿òÖĞµã»÷NetWorkÔÚÓÒ²àµÄÇøÓòÅäÖÃSSH ClientÏîÎªGit°²×°Ä¿Â¼ÏÂbin/ssh.exeÎÄ¼ş£¬×¢ÒâÊÇGitµÄ°²×°Ä¿Â¼ÏÂµÄ¡£
+ÅäÖÃÍê³Éµã»÷pushÕı³£Ìá½»µ½Ô¶³Ì·şÎñÆ÷¡£
+
+git clone -b develop http://gitlab.oapol.com/cheyian/cy-sp.git sp
+
+setx HOME D:\git_v201504
+#ÅäÖÃÊ¹ÓÃgit²Ö¿âµÄÈËÔ±ĞÕÃû  
+git config --global user.name "Your Name Comes Here"  
+  
+#ÅäÖÃÊ¹ÓÃgit²Ö¿âµÄÈËÔ±email  
+git config --global user.email you@yourdomain.example.com  
+
+ÉèÖÃ¼Ç×¡ÃÜÂë£¨Ä¬ÈÏ15·ÖÖÓ£©£º
+
+git config --global credential.helper cache
+Èç¹ûÏë×Ô¼ºÉèÖÃÊ±¼ä£¬¿ÉÒÔÕâÑù×ö£º
+
+git config credential.helper 'cache --timeout=3600'
+ÕâÑù¾ÍÉèÖÃÒ»¸öĞ¡Ê±Ö®ºóÊ§Ğ§
+
+³¤ÆÚ´æ´¢ÃÜÂë£º
+git config --global credential.helper store
+
+clone Ä³¸ö·ÖÖ§£º
+git clone -b b1 https://github.com/...
+
+cloneËùÓĞ·ÖÖ§
+git clone https://github.com/...
+git branch -r
+* master
+  origin/HEAD -> origin/master
+  origin/master
+  origin/b1
+git checkout b1
+
+1 ²é¿´Ô¶³Ì·ÖÖ§
+$ git branch -a
+* br-2.1.2.2
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/br-2.1.2.1
+  remotes/origin/br-2.1.2.2
+  remotes/origin/br-2.1.3
+  remotes/origin/master
+
+2 ²é¿´±¾µØ·ÖÖ§
+shuohailhl@SHUOHAILHL-PC /f/ggg/jingwei (br-2.1.2.2)  
+$ git branch  
+* br-2.1.2.2  
+  master  
+
+3 ´´½¨·ÖÖ§
+shuohailhl@SHUOHAILHL-PC /f/ggg/jingwei (br-2.1.2.2)  
+$ git branch test  
+  
+shuohailhl@SHUOHAILHL-PC /f/ggg/jingwei (br-2.1.2.2)  
+$ git branch  
+* br-2.1.2.2  
+  master  
+  test 
+
+
+ÏßÃæÊÇ°Ñ·ÖÖ§ÍÆµ½Ô¶³Ì·ÖÖ§ 
+$ git push origin test  
+
+4 ÇĞ»»·ÖÖ§µ½test
+shuohailhl@SHUOHAILHL-PC /f/ggg/jingwei (br-2.1.2.2)  
+$ git branch  
+* br-2.1.2.2  
+  master  
+  test  
+  
+shuohailhl@SHUOHAILHL-PC /f/ggg/jingwei (br-2.1.2.2)  
+$ git checkout test  
+M       jingwei-server/src/main/java/com/taobao/jingwei/server/service/cmd/GetCustomerTarCmd.java  
+M       jingwei-server/src/main/java/com/taobao/jingwei/server/util/ServerUtil.java  
+Switched to branch 'test'  
+  
+shuohailhl@SHUOHAILHL-PC /f/ggg/jingwei (test)  
+$ git branch  
+  br-2.1.2.2  
+  master  
+* test  
+
+M ±íÊ¾cong Ô­À´·ÖÖ§£¨ÉÏÒ»´ÎĞŞ¸ÄÃ»ÓĞÌá½»br-2.1.2.2£©´ø¹ıÀ´µÄĞŞ¸Ä
+5 É¾³ı±¾µØ·ÖÖ§   Git branch -d xxxxx
+$ git checkout br-2.1.2.2  
+M       jingwei-server/src/main/java/com/taobao/jingwei/server/service/cmd/GetCustomerTarCmd.java  
+M       jingwei-server/src/main/java/com/taobao/jingwei/server/util/ServerUtil.java  
+Switched to branch 'br-2.1.2.2'  
+  
+shuohailhl@SHUOHAILHL-PC /f/ggg/jingwei (br-2.1.2.2)  
+$ git br  
+* br-2.1.2.2  
+  master  
+  test  
+  
+shuohailhl@SHUOHAILHL-PC /f/ggg/jingwei (br-2.1.2.2)  
+$ git br -d test  
+Deleted branch test (was 17d28d9).  
+  
+shuohailhl@SHUOHAILHL-PC /f/ggg/jingwei (br-2.1.2.2)  
+$ git br  
+* br-2.1.2.2  
+  master  
+
+6 ²é¿´±¾µØºÍÔ¶³Ì·ÖÖ§  -a¡£Ç°Ãæ´ø*ºÅµÄ´ú±íÄãµ±Ç°¹¤×÷Ä¿Â¼Ëù´¦µÄ·ÖÖ§
+remotes/origin/HEAD -> origin/master #É¶ÒâË¼ÄØ£¿ 
